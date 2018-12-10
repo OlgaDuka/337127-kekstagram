@@ -15,9 +15,12 @@
     "eslint-config-htmlacademy": "0.5.2"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  },
   "scripts": {
-    "test": "eslint js/"
+    "test": "eslint js/",
+    "start": "browser-sync start --server --files='./js/*.js,./*.css, ./*.html'"
   },
   "engines": {
     "node": "8.11"
